@@ -3,14 +3,6 @@
 function rainbowunicorn_scripts() {
 
     wp_enqueue_script(
-        'jquery',
-        get_template_directory_uri() . '/js/jquery.js',
-        array(),
-        '2.0.3',
-        true
-    );
-
-    wp_enqueue_script(
         'bootstrap-js',
         get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js',
         array('jquery'),
