@@ -14,3 +14,6 @@ add_action( 'wp_enqueue_scripts', 'rainbowunicorn_scripts');
 
 add_action( 'wp_enqueue_scripts', 'rainbowunicorn_styles' );
 
+// Enable post thumbnails
+add_theme_support('post-thumbnails');
+set_post_thumbnail_size(520, 250, true);
