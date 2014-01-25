@@ -1,0 +1,20 @@
+{
+  "name": "RainbowUnicornTheme",
+  "version": "0.0.0",
+  "description": "Rainbow-Unicorn-Theme =====================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stinaq/Rainbow-Unicorn-Theme.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-copy": "~0.5.0"
+  }
+}
