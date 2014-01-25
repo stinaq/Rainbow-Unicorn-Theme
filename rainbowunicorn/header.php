@@ -33,7 +33,11 @@
   ?>
 </head>
 <body>
- 
-  <header id="header">
-    <h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
-  </header>
+  <section class="row horizontal-centered">
+    <header class="container">
+      <h1 class="vertical-centered">
+        <a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a>
+      </h1>
+    </header>
+  </section> 
+  
