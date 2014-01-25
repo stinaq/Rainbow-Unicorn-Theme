@@ -13,6 +13,16 @@ Text Domain: twentythirteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+/* =================================================
+
+                    VARIABLES
+
+================================================= */
+/* =================================================
+
+                    RESETTING
+
+================================================= */
 /* normalize.css v1.0.0 | MIT License | git.io/normalize */
      article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -225,10 +235,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   border-collapse: collapse;
   border-spacing: 0; }
 
-body, html {
-  margin: 0;
-  padding: 0; }
+/* =================================================
 
+                    GRID
+
+================================================= */
 .row {
   display: flex; }
 
