@@ -40,6 +40,10 @@ $dark-grey: #3D3D3D;
 ================================================= */
 
 @import "normalize.scss";
+html, body, h1 {
+    margin: 0;
+    padding: 0;
+}
 
 
 
