@@ -63,15 +63,30 @@ a {
 
 ================================================= */
 
-.row{
+.row {
     display: flex;
 }
 
-.centered-content {
+.horizontal-centered {
     justify-content: center;
+}
+.vertical-centered {
+    align-items: center;
 }
 
 .container {
     width: $content-width;
-    background: red;
 }
+
+header {
+    height: 140px;
+    display: flex;
+
+
+}
+
+
+
+
+
+
