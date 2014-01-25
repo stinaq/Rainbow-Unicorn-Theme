@@ -15,3 +15,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import "normalize.scss";
+
+$content-width: 1100px;
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.row{
+    display: flex;
+}
+
+.centered-content {
+    justify-content: center;
+}
+
+.container {
+    width: $content-width;
+    background: red;
+}

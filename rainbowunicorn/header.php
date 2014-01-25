@@ -34,13 +34,6 @@
 </head>
 <body>
  
-<div id="wrapper">
   <div id="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
-        </div>
-      </div>
-    </div>
+    <h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
   </div>
