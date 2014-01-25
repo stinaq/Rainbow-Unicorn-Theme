@@ -46,8 +46,14 @@ html, body, h1 {
 }
 
 
-
-
+a {
+    text-decoration: none;
+    color: $dark-grey;
+    transition:All 0.3s linear;
+    &:hover {
+        color: lighten($dark-grey,30);
+    }
+}
 
 
 
