@@ -32,10 +32,6 @@ $headline-color:            #fff;
 
 
 
-
-
-
-
 /* =================================================
 
                     BASE
@@ -115,7 +111,7 @@ header {
                 }
             }
             .article-meta {
-                color: lighten($color,8);
+                color: lighten($color,20);
                 margin: 5px 0 15px $main-padding;
                 font-weight: 300;
                 font-size: 0.8em;
@@ -131,9 +127,9 @@ header {
                     }
                 }
                 a {
-                    color: darken($color,10);
+                    color: saturate(darken($color,30),80);
                     &:hover {
-                        color: lighten($color,1);
+                        color: lighten($color,10);
                         text-decoration: underline;
                     }
                 }
@@ -144,9 +140,55 @@ header {
         }
 
     }
-    &.pink {
-        @include unicornify(pink);
+    &.pastel-red {
+        @include unicornify(#F7977A);
     }
+    &.pastel-red-orange {
+        @include unicornify(#F9AD81);
+    }
+    &.pastel-yellow-orange {
+        @include unicornify(#FDC68A);
+    }
+    &.pastel-yellow {
+        @include unicornify(#FFF79A);
+    }
+    &.pastel-pea-green {
+        @include unicornify(#C4DF9B);
+    }
+    &.pastel-yellow-green {
+        @include unicornify(#A2D39C);
+    }
+    &.pastel-green {
+        @include unicornify(#82CA9D);
+    }
+    &.pastel-green-cyan {
+        @include unicornify(#7BCDC8);
+    }
+    &.pastel-cyan {
+        @include unicornify(#6ECFF6);
+    }
+    &.pastel-cyan-blue {
+        @include unicornify(#7EA7D8);
+    }
+    &.pastel-blue {
+        @include unicornify(#8493CA);
+    }
+    &.pastel-blue-violet {
+        @include unicornify(#8882BE);
+    }
+    &.pastel-violet {
+        @include unicornify(#A187BE);
+    }
+    &.pastel-violet-magenta {
+        @include unicornify(#BC8DBF);
+    }
+    &.pastel-magenta {
+        @include unicornify(#F49AC2);
+    }
+    &.pastel-magenta-red {
+        @include unicornify(#F6989D);
+    }
+
 }
 
 
