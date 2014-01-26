@@ -2,21 +2,25 @@
 
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <section class="row horizontal-centered unicorn-section">
+    <section class="row horizontal-centered unicorn-section pink">
       <article class="container">
-        <a href="<?php the_permalink( ) ?>">
-          <h1><?php the_title(); ?></h1>
-        </a>
-        <h4>Posted on <?php the_time('F jS, Y') ?></h4>
+        
+        <h1 class="article-headline">
+          <a href="<?php the_permalink( ) ?>">
+            <?php the_title(); ?>
+          </a>
+        </h1>
+        <h4 class="article-meta">Posted on <?php the_time('F jS, Y') ?></h4>
+        <div class="content two-columns">
+          <?php 
+            echo get_the_content();
+          ?>
+        </div>
       </article>
     </section>
     
-
-
   <?php endwhile; else: ?>
   
   <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
-
-
 
 <?php get_footer(); ?>

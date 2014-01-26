@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
 /*
 Theme Name: Unicorn
 Theme URI: http://wordpress.org/themes/twentythirteen
@@ -244,12 +245,12 @@ html, body, h1 {
 a {
   text-decoration: none;
   color: #3d3d3d;
-  transition: All 0.3s ease-out; }
+  transition: All 0.4s ease-out; }
   a:hover {
     color: #8a8a8a; }
 
 * {
-  font-family: helvetica;
+  font-family: Raleway;
   box-sizing: border-box; }
 
 /* =================================================
@@ -258,7 +259,7 @@ a {
 
 ================================================= */
 .row {
-  padding: 30px 0; }
+  padding: 40px 0; }
 
 .horizontal-centered {
   justify-content: center;
@@ -274,10 +275,37 @@ a {
 header {
   height: 140px; }
 
-.unicorn-section {
+.unicorn-section.pink {
   background: pink;
-  border-bottom: 1px solid white; }
-
-article {
-  padding: 30px;
-  background: white; }
+  border-bottom: 1px solid white;
+  box-shadow: inset 0px -18px 17px -18px rgba(79, 79, 79, 0.48); }
+  .unicorn-section.pink article .article-headline {
+    font-size: 1.8em; }
+    .unicorn-section.pink article .article-headline a {
+      color: white; }
+      .unicorn-section.pink article .article-headline a:hover {
+        color: #ffe4e8; }
+  .unicorn-section.pink article .article-meta {
+    color: #ffe9ed;
+    margin: 5px 0 15px 40px;
+    font-weight: 300;
+    font-size: 0.8em; }
+  .unicorn-section.pink article .content {
+    color: #707070;
+    background: white;
+    padding: 40px;
+    line-height: 1.5; }
+    .unicorn-section.pink article .content h1:first-of-type, .unicorn-section.pink article .content h2:first-of-type, .unicorn-section.pink article .content h3:first-of-type, .unicorn-section.pink article .content h4:first-of-type {
+      margin-top: 0; }
+    .unicorn-section.pink article .content a {
+      color: #ff8da1; }
+      .unicorn-section.pink article .content a:hover {
+        color: #ffc5cf;
+        text-decoration: underline; }
+  .unicorn-section.pink article .two-columns {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px; }

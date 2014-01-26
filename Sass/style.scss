@@ -24,9 +24,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 ================================================= */
 
-$content-width: 1000px;
-$dark-grey: #3D3D3D;
-$article-background: #fff;
+$content-width:             1000px;
+$main-padding:              40px;
+$dark-grey:                 #3D3D3D;
+$article-background:        #fff;
+$headline-color:            #fff;
 
 
 
@@ -41,6 +43,10 @@ $article-background: #fff;
 ================================================= */
 
 @import "normalize.scss";
+@import "mixins.scss";
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+
+
 html, body, h1 {
     margin: 0;
     padding: 0;
@@ -50,14 +56,14 @@ html, body, h1 {
 a {
     text-decoration: none;
     color: $dark-grey;
-    transition:All 0.3s ease-out;
+    transition:All 0.4s ease-out;
     &:hover {
         color: lighten($dark-grey,30);
     }
 }
 
 * {
-    font-family: helvetica;
+    font-family: Raleway;
     box-sizing: border-box;
 }
 
@@ -69,7 +75,7 @@ a {
 ================================================= */
 
 .row {
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .horizontal-centered {
@@ -93,15 +99,57 @@ header {
 }
 
 .unicorn-section {
-    background: pink;
-    border-bottom: 1px solid $article-background;
-    
+    @mixin unicornify ($color) {
+        background: $color;
+        border-bottom: 1px solid $article-background;
+        box-shadow: inset 0px -18px 17px -18px rgba(79,79,79,0.48);
+
+        article {
+            .article-headline {
+                font-size: 1.8em;
+                a {
+                    color: $headline-color;
+                    &:hover {
+                        color: lighten($color,7);
+                    }
+                }
+            }
+            .article-meta {
+                color: lighten($color,8);
+                margin: 5px 0 15px $main-padding;
+                font-weight: 300;
+                font-size: 0.8em;
+            }
+            .content {
+                color: lighten($dark-grey,20);
+                background: $article-background;
+                padding: 40px;
+                line-height: 1.5;
+                h1,h2,h3,h4 {
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+                }
+                a {
+                    color: darken($color,10);
+                    &:hover {
+                        color: lighten($color,1);
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .two-columns {
+                @include browser-columns(2, 30px);
+            }
+        }
+
+    }
+    &.pink {
+        @include unicornify(pink);
+    }
 }
 
-article {
-    padding: 30px;
-    background: $article-background;
-}
+
 
 
 
