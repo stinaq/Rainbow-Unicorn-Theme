@@ -26,6 +26,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 $content-width: 1000px;
 $dark-grey: #3D3D3D;
+$article-background: #fff;
 
 
 
@@ -35,7 +36,7 @@ $dark-grey: #3D3D3D;
 
 /* =================================================
 
-                    RESETTING
+                    BASE
 
 ================================================= */
 
@@ -49,29 +50,35 @@ html, body, h1 {
 a {
     text-decoration: none;
     color: $dark-grey;
-    transition:All 0.3s linear;
+    transition:All 0.3s ease-out;
     &:hover {
         color: lighten($dark-grey,30);
     }
 }
 
+* {
+    font-family: helvetica;
+    box-sizing: border-box;
+}
 
 
 /* =================================================
 
-                    GRID
+                    STYLING
 
 ================================================= */
 
 .row {
-    display: flex;
+    padding: 30px 0;
 }
 
 .horizontal-centered {
     justify-content: center;
+    display: flex;
 }
 .vertical-centered {
     align-items: center;
+    display: flex;
 }
 
 .container {
@@ -80,11 +87,21 @@ a {
 
 header {
     height: 140px;
-    display: flex;
+    .container {
 
-
+    }
 }
 
+.unicorn-section {
+    background: pink;
+    border-bottom: 1px solid $article-background;
+    
+}
+
+article {
+    padding: 30px;
+    background: $article-background;
+}
 
 
 

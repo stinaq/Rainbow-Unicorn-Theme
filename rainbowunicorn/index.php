@@ -2,7 +2,7 @@
 
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <section class="row horizontal-centered">
+    <section class="row horizontal-centered unicorn-section">
       <article class="container">
         <a href="<?php the_permalink( ) ?>">
           <h1><?php the_title(); ?></h1>

@@ -22,7 +22,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 ================================================= */
 /* =================================================
 
-                    RESETTING
+                    BASE
 
 ================================================= */
 /* normalize.css v1.0.0 | MIT License | git.io/normalize */
@@ -244,27 +244,40 @@ html, body, h1 {
 a {
   text-decoration: none;
   color: #3d3d3d;
-  transition: All 0.3s linear; }
+  transition: All 0.3s ease-out; }
   a:hover {
     color: #8a8a8a; }
 
+* {
+  font-family: helvetica;
+  box-sizing: border-box; }
+
 /* =================================================
 
-                    GRID
+                    STYLING
 
 ================================================= */
 .row {
-  display: flex; }
+  padding: 30px 0; }
 
 .horizontal-centered {
-  justify-content: center; }
+  justify-content: center;
+  display: flex; }
 
 .vertical-centered {
-  align-items: center; }
+  align-items: center;
+  display: flex; }
 
 .container {
   width: 1000px; }
 
 header {
-  height: 140px;
-  display: flex; }
+  height: 140px; }
+
+.unicorn-section {
+  background: pink;
+  border-bottom: 1px solid white; }
+
+article {
+  padding: 30px;
+  background: white; }
