@@ -48,7 +48,6 @@ html, body, h1 {
     padding: 0;
 }
 
-
 a {
     text-decoration: none;
     color: $dark-grey;
@@ -62,7 +61,6 @@ a {
     font-family: Raleway;
     box-sizing: border-box;
 }
-
 
 /* =================================================
 
@@ -188,7 +186,6 @@ header {
     &.pastel-magenta-red {
         @include unicornify(#F6989D);
     }
-
 }
 
 
