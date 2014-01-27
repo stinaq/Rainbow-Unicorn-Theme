@@ -62,6 +62,14 @@ a {
     box-sizing: border-box;
 }
 
+pre, code {
+    overflow: scroll;
+}
+
+.main {
+    flex: 1;
+}
+
 /* =================================================
 
                     STYLING
