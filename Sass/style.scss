@@ -133,7 +133,7 @@ header {
                 }
             }
             .two-columns {
-                @include browser-columns(2, 30px);
+                @include browser-columns(1, 30px);
             }
         }
 
