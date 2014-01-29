@@ -39,5 +39,6 @@
         <a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a>
       </h1>
     </div>
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
   </header> 
   

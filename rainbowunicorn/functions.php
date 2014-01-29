@@ -20,7 +20,10 @@ function rainbowunicorn_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'rainbowunicorn_scripts');
 
-add_action( 'wp_enqueue_scripts', 'rainbowunicorn_styles' );
+function register_navigation() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_navigation' );
 
 // Enable post thumbnails
 add_theme_support('post-thumbnails');
