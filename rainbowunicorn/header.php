@@ -34,11 +34,13 @@
 </head>
 <body>
   <header class="horizontal-centered">
-    <div class="container vertical-centered">
+    <div class="container vertical-centered horizontal-spacebetween">
       <h1 class="">
         <a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a>
       </h1>
+      <div id="unicorn-menu">
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+      </div>
     </div>
-    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
   </header> 
   

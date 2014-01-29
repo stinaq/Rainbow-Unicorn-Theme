@@ -277,6 +277,10 @@ pre, code {
   justify-content: center;
   display: flex; }
 
+.horizontal-spacebetween {
+  align-items: space-between;
+  display: flex; }
+
 .vertical-centered {
   align-items: center;
   display: flex; }
@@ -292,6 +296,31 @@ footer {
   height: 100px;
   background: #fff; }
 
+/* =================================================
+
+                    MENU
+
+================================================= */
+#unicorn-menu {
+  flex: 1;
+  margin-left: 80px; }
+  #unicorn-menu ul.menu {
+    display: flex; }
+    #unicorn-menu ul.menu li {
+      list-style: none; }
+      #unicorn-menu ul.menu li.menu-item {
+        flex: 1; }
+      #unicorn-menu ul.menu li a {
+        padding: 10px 20px; }
+        #unicorn-menu ul.menu li a:hover {
+          background: #F49AC2;
+          color: #fff; }
+
+/* =================================================
+
+                    ARTICLE
+
+================================================= */
 .unicorn-section.pastel-red {
   background: #f7977a;
   border-bottom: 1px solid white; }

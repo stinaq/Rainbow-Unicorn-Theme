@@ -91,6 +91,10 @@ pre, code {
     justify-content: center;
     display: flex;
 }
+.horizontal-spacebetween {
+    align-items: space-between;
+    display: flex;
+}
 .vertical-centered {
     align-items: center;
     display: flex;
@@ -109,6 +113,42 @@ footer {
     height: 100px;
     background: #fff;
 }
+
+/* =================================================
+
+                    MENU
+
+================================================= */
+
+#unicorn-menu {
+    flex: 1;
+    margin-left: 80px;
+    ul.menu {
+        display: flex;
+        li {
+            list-style: none;
+            &.menu-item {
+                flex: 1;
+            }
+            a {
+                padding: 10px 20px;
+                &:hover {
+                    background: #F49AC2;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* =================================================
+
+                    ARTICLE
+
+================================================= */
 
 .unicorn-section {
     @mixin unicornify ($color) {
