@@ -3,10 +3,18 @@
 function rainbowunicorn_scripts() {
 
     wp_enqueue_script(
-        'bootstrap-js',
-        get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js',
-        array('jquery'),
-        '2.3.2',
+        'jQuery',
+        get_template_directory_uri() . '/js/jquery.js',
+        array(''),
+        '2.1.0',
+        true
+    );
+
+    wp_enqueue_script(
+        'unicorn',
+        get_template_directory_uri() . '/js/unicorn.js',
+        array(''),
+        '0.1',
         true
     );
 }
