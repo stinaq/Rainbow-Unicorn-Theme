@@ -36,7 +36,7 @@
 
 	 <?php else : // comments are closed ?>
 		<!-- If comments are closed. -->
-		<p class="nocomments">Comments are closed.asasasd</p>
+		<p class="nocomments"></p>
 
 	<?php endif; ?>
 <?php endif; ?>
