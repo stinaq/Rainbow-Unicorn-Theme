@@ -25,8 +25,8 @@
 
       <div class="horizontal-centered prev-next">
         <div class="container vertical-centered horizontal-spacebetween">
-          <button class="nav-next button"><?php previous_posts_link( 'Newer posts' ); ?></button>
-          <button class="nav-previous button"><?php next_posts_link( 'Older posts' ); ?></button>
+          <button class="nav-next button"><?php previous_posts_link( '<< Newer posts' ); ?></button>
+          <button class="nav-previous button"><?php next_posts_link( 'Older posts >>' ); ?></button>
         </div>
       </div>
       <?php else : ?>
