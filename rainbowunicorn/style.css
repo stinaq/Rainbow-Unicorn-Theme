@@ -293,7 +293,6 @@ header {
   background: #fff; }
 
 footer {
-  height: 100px;
   background: #fff; }
 
 /* =================================================
@@ -866,3 +865,28 @@ footer {
     -moz-column-gap: 30px;
     -webkit-column-gap: 30px;
     column-gap: 30px; }
+
+/* =================================================
+
+                    FOOTER
+
+================================================= */
+footer {
+  background: #fff; }
+  footer .footer-container {
+    display: flex; }
+  footer .footer-widget {
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    flex: 1;
+    color: #919191; }
+    footer .footer-widget a {
+      color: #919191;
+      text-decoration: underline; }
+      footer .footer-widget a:hover {
+        text-decoration: none; }
+    footer .footer-widget:last-child {
+      flex: none; }
+    footer .footer-widget h2 {
+      font-size: 1.2em; }

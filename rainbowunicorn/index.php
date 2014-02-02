@@ -3,7 +3,7 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
       <section class="row horizontal-centered unicorn-section <?php echo unicornify(get_the_ID()); ?>">
-        <article class="container">
+        <article <?php post_class( 'container' ); ?> >
           
           <h1 class="article-headline">
             <a href="<?php the_permalink( ) ?>">

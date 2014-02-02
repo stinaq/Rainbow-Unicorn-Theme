@@ -29,7 +29,7 @@ $main-padding:              40px;
 $dark-grey:                 #3D3D3D;
 $article-background:        #fff;
 $headline-color:            #fff;
-
+$meta-text:                 #919191;
 
 
 /* =================================================
@@ -110,7 +110,6 @@ header {
 }
 
 footer {
-    height: 100px;
     background: #fff;
 }
 
@@ -244,8 +243,38 @@ footer {
     }
 }
 
+/* =================================================
 
+                    FOOTER
 
+================================================= */
+
+footer {
+    .footer-container {
+        display: flex;
+    }
+    background: #fff;
+    .footer-widget {
+        font-size: 12px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+        flex: 1;
+        color: $meta-text;
+        a {
+            color: $meta-text;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &:last-child {
+            flex: none;
+        }
+        h2 {
+            font-size: 1.2em;
+        }
+    }
+}
 
 
 

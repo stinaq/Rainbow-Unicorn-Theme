@@ -29,6 +29,18 @@ add_action( 'init', 'register_navigation' );
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(520, 250, true);
 
+if (function_exists('register_sidebar')) {
+    register_sidebar(array(
+      'name' => 'Sidebar Widgets',
+      'id'   => 'sidebar-widgets',
+      'description'   => 'Widget Area',
+      'before_widget' => '<div class="footer-widget">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h2>',
+      'after_title'   => '</h2>'
+    ));
+}
+
 function unicornify($id) {
 
     $color = array( 
