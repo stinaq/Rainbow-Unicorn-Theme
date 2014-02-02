@@ -246,7 +246,8 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: #f49ac2; }
+  background: #f49ac2;
+  font-size: 0.9em; }
 
 a {
   text-decoration: none;
