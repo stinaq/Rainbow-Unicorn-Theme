@@ -20,8 +20,17 @@
         </article>
       </section>
       
-    <?php endwhile; else: ?>
-    
-    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
+    <?php endwhile; ?>
+    <!-- End of the main loop -->
+
+      <div class="horizontal-centered prev-next">
+        <div class="container vertical-centered horizontal-spacebetween">
+          <button class="nav-next button"><?php previous_posts_link( 'Newer posts' ); ?></button>
+          <button class="nav-previous button"><?php next_posts_link( 'Older posts' ); ?></button>
+        </div>
+      </div>
+      <?php else : ?>
+      <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+    <?php endif; ?>
   </div>
 <?php get_footer(); ?>

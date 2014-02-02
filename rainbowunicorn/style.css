@@ -246,7 +246,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: #F49AC2; }
+  background: #f49ac2; }
 
 a {
   text-decoration: none;
@@ -278,7 +278,7 @@ pre, code {
   display: flex; }
 
 .horizontal-spacebetween {
-  align-items: space-between;
+  justify-content: space-between;
   display: flex; }
 
 .vertical-centered {
@@ -865,6 +865,25 @@ footer {
     -moz-column-gap: 30px;
     -webkit-column-gap: 30px;
     column-gap: 30px; }
+
+/* =================================================
+
+                    PREV NEXT NAVIGATION
+
+================================================= */
+.prev-next {
+  height: 100px; }
+  .prev-next button {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #fff;
+    background: #f6a8ca;
+    display: inherit; }
+    .prev-next button a {
+      padding: 10px 15px;
+      color: #fff; }
+      .prev-next button a:hover {
+        background: #f07aaf; }
 
 /* =================================================
 

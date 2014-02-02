@@ -30,6 +30,7 @@ $dark-grey:                 #3D3D3D;
 $article-background:        #fff;
 $headline-color:            #fff;
 $meta-text:                 #919191;
+$unicorn-pink:              #F49AC2;
 
 
 /* =================================================
@@ -52,7 +53,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: #F49AC2;
+    background: $unicorn-pink;
 }
 
 a {
@@ -92,7 +93,7 @@ pre, code {
     display: flex;
 }
 .horizontal-spacebetween {
-    align-items: space-between;
+    justify-content: space-between;
     display: flex;
 }
 .vertical-centered {
@@ -240,6 +241,29 @@ footer {
     }
     &.pastel-magenta-red {
         @include unicornify(#F6989D);
+    }
+}
+
+/* =================================================
+
+                    PREV NEXT NAVIGATION
+
+================================================= */
+.prev-next {
+    height: 100px;
+    button {
+        padding: 0;
+        margin: 0;
+        border: 1px solid #fff;
+        background: lighten($unicorn-pink,3);
+        display: inherit;
+        a {
+            padding: 10px 15px;
+            color: #fff;
+            &:hover {
+                background: darken($unicorn-pink,7);               
+            }
+        }
     }
 }
 
