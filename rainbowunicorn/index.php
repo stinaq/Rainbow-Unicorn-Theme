@@ -10,10 +10,29 @@
               <?php the_title(); ?>
             </a>
           </h1>
-          <h4 class="article-meta">Posted on <?php the_time('F jS, Y') ?></h4>
+
+          <div class="horizontal-spacebetween meta-container">
+            <h4 class="article-meta">Posted on <?php the_time('F jS, Y') ?></h4>
+
+            <div class="horizontal-end article-meta">
+              <?php
+                $categories = get_the_category();
+                $separator = ' | ';
+                $output = '';
+                if($categories){
+                  foreach($categories as $category) {
+                    $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' 
+                    . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) 
+                    . '">'.$category->cat_name.'</a>'.$separator;
+                  }
+                  echo trim($output, $separator);
+                }
+              ?>
+            </div>
+          </div>
+
           <div class="content two-columns">
             <?php 
-
               echo get_the_content();
             ?>
           </div>
@@ -34,3 +53,8 @@
     <?php endif; ?>
   </div>
 <?php get_footer(); ?>
+
+
+
+
+                

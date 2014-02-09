@@ -97,6 +97,10 @@ pre, code {
     justify-content: space-between;
     display: flex;
 }
+.horizontal-end {
+    justify-content: flex-end;
+    display: flex;
+}
 .vertical-centered {
     align-items: center;
     display: flex;
@@ -166,11 +170,28 @@ footer {
                     }
                 }
             }
+            .meta-container {
+                margin-bottom: 15px;
+                margin-left: $main-padding;
+            }
             .article-meta {
                 color: lighten($color,20);
-                margin: 5px 0 15px $main-padding;
+                margin: 0;
                 font-weight: 300;
                 font-size: 0.8em;
+                a {
+                    color: lighten($color,20); 
+                    margin: 0 5px;
+                    &:hover {
+                        color: lighten($color,9);
+                    }
+                    &:first-of-type {
+                        margin-left: 0;
+                    }
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
             }
             .content {
                 color: lighten($dark-grey,20);
