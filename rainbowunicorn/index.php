@@ -36,6 +36,7 @@
               echo get_the_content();
             ?>
           </div>
+          <span class="tags-container article-meta"><?php the_tags('#&nbsp; ',' • ','<br />'); ?></span>
         </article>
       </section>
       

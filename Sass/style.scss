@@ -193,6 +193,10 @@ footer {
                     }
                 }
             }
+            .tags-container {
+                float: right;
+                margin-top: 5px;
+            }
             .content {
                 color: lighten($dark-grey,20);
                 background: $article-background;
