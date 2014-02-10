@@ -31,10 +31,24 @@
             </div>
           </div>
 
-          <div class="content two-columns">
+          <div class="content">
+
             <?php 
-              echo get_the_content();
+              if ( has_post_thumbnail() ) {
+                $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
             ?>
+                <div class="featured-image" style="background-image:url(<?php echo $url; ?>);">
+
+                </div>
+            <?php
+              } 
+            ?>
+
+            <div class="common-padding">
+              <?php 
+                echo get_the_content();
+              ?>
+            </div>
           </div>
           <span class="tags-container article-meta"><?php the_tags('#&nbsp; ',' • ','<br />'); ?></span>
         </article>

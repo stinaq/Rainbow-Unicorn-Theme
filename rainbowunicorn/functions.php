@@ -64,3 +64,4 @@ function unicornify($id) {
 
     return $color[ ( $id % count( $color ) ) ];
 }
+
