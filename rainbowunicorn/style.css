@@ -310,11 +310,10 @@ footer {
   margin-left: 80px; }
   #unicorn-menu ul.menu {
     font-size: 12px;
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
     #unicorn-menu ul.menu li {
       list-style: none; }
-      #unicorn-menu ul.menu li.menu-item {
-        flex: 1; }
       #unicorn-menu ul.menu li a {
         padding: 10px 20px; }
         #unicorn-menu ul.menu li a:hover {
