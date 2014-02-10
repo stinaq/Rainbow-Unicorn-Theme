@@ -266,6 +266,32 @@ pre, code {
 .main {
   flex: 1; }
 
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em; }
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0; }
+
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+a img.alignright {
+  float: right;
+  margin: 0 0 1em 1em; }
+
+a img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 /* =================================================
 
                     STYLING
@@ -329,7 +355,9 @@ footer {
   background: #f7977a;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-red article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-red article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-red article .article-headline a {
@@ -383,7 +411,9 @@ footer {
   background: #f9ad81;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-red-orange article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-red-orange article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-red-orange article .article-headline a {
@@ -437,7 +467,9 @@ footer {
   background: #fdc68a;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-yellow-orange article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-yellow-orange article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-yellow-orange article .article-headline a {
@@ -491,7 +523,9 @@ footer {
   background: #fff79a;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-yellow article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-yellow article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-yellow article .article-headline a {
@@ -545,7 +579,9 @@ footer {
   background: #c4df9b;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-pea-green article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-pea-green article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-pea-green article .article-headline a {
@@ -599,7 +635,9 @@ footer {
   background: #a2d39c;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-yellow-green article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-yellow-green article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-yellow-green article .article-headline a {
@@ -653,7 +691,9 @@ footer {
   background: #82ca9d;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-green article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-green article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-green article .article-headline a {
@@ -707,7 +747,9 @@ footer {
   background: #7bcdc8;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-green-cyan article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-green-cyan article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-green-cyan article .article-headline a {
@@ -761,7 +803,9 @@ footer {
   background: #6ecff6;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-cyan article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-cyan article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-cyan article .article-headline a {
@@ -815,7 +859,9 @@ footer {
   background: #7ea7d8;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-cyan-blue article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-cyan-blue article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-cyan-blue article .article-headline a {
@@ -869,7 +915,9 @@ footer {
   background: #8493ca;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-blue article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-blue article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-blue article .article-headline a {
@@ -923,7 +971,9 @@ footer {
   background: #8882be;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-blue-violet article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-blue-violet article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-blue-violet article .article-headline a {
@@ -977,7 +1027,9 @@ footer {
   background: #a187be;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-violet article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-violet article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-violet article .article-headline a {
@@ -1031,7 +1083,9 @@ footer {
   background: #bc8dbf;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-violet-magenta article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-violet-magenta article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-violet-magenta article .article-headline a {
@@ -1085,7 +1139,9 @@ footer {
   background: #f49ac2;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-magenta article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-magenta article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-magenta article .article-headline a {
@@ -1139,7 +1195,9 @@ footer {
   background: #f6989d;
   border-bottom: 1px solid white; }
   .unicorn-section.pastel-magenta-red article img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    margin: 10px; }
   .unicorn-section.pastel-magenta-red article .article-headline {
     font-size: 1.8em; }
     .unicorn-section.pastel-magenta-red article .article-headline a {
