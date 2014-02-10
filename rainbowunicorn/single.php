@@ -46,7 +46,7 @@
 
             <div class="common-padding">
             <?php 
-              echo get_the_content();
+              the_content();
               comments_template( '/comments.php' );
             ?>
           </div>
