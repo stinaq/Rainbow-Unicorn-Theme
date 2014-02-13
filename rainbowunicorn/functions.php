@@ -47,7 +47,6 @@ function unicornify($id) {
         'pastel-red', 
         'pastel-red-orange', 
         'pastel-yellow-orange', 
-        'pastel-yellow', 
         'pastel-pea-green',
         'pastel-yellow-green',
         'pastel-green',
@@ -59,7 +58,21 @@ function unicornify($id) {
         'pastel-violet',
         'pastel-violet-magenta',
         'pastel-magenta',
-        'pastel-magenta-red' 
+        'one', 
+        'two', 
+        'three', 
+        'four',
+        'five',
+        'six',
+        'seven',
+        'eight',
+        'nine',
+        'ten',
+        'eleven',
+        'twelve',
+        'thirteen',
+        'fourteen',
+        'fifteen' 
     );
 
     return $color[ ( $id % count( $color ) ) ];

@@ -296,6 +296,51 @@ footer {
     &.pastel-magenta-red {
         @include unicornify(#F6989D);
     }
+    &.one {
+        @include unicornify(#CD7BAB);
+    }
+    &.two {
+        @include unicornify(#C97BCD);
+    }
+    &.three {
+        @include unicornify(#997BCD);
+    }
+    &.four {
+        @include unicornify(#7B9ACD);
+    }
+    &.five {
+        @include unicornify(#7BB9CD);
+    }
+    &.six {
+        @include unicornify(#7BCDAF);
+    }
+    &.seven {
+        @include unicornify(#43E8AC);
+    }
+    &.eight {
+        @include unicornify(#71D979);
+    }
+    &.nine {
+        @include unicornify(#E8C75A);
+    }
+    &.ten {
+        @include unicornify(#E88C5A);
+    }
+    &.eleven {
+        @include unicornify(#5AB6E8);
+    }
+    &.twelve {
+        @include unicornify(#FA7D8E);
+    }
+    &.thirteen {
+        @include unicornify(#D67CDE);
+    }
+    &.fourteen {
+        @include unicornify(#A1CC56);
+    }
+    &.fifteen {
+        @include unicornify(#56CCAE);
+    }
 }
 
 /* =================================================
