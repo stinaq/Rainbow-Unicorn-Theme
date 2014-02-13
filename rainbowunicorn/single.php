@@ -40,7 +40,7 @@
             <?php
               } 
             ?>
-            <div class="common-padding">
+            <div class="common-padding floating-takes-place">
             <?php 
               the_content();
               comments_template( '/comments.php' );

@@ -240,7 +240,9 @@ footer {
             }
             .common-padding {
                 padding: 40px;
-
+            }
+            .floating-takes-place {
+                overflow: hidden;
             }
             .two-columns {
                 @include browser-columns(1, 30px);
