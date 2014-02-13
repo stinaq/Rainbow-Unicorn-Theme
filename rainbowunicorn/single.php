@@ -32,18 +32,14 @@
           </div>
 
           <div class="content">
-
             <?php 
               if ( has_post_thumbnail() ) {
                 $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
             ?>
-                <div class="featured-image" style="background-image:url(<?php echo $url; ?>);">
-
-                </div>
+                <div class="featured-image" style="background-image:url(<?php echo $url; ?>);"></div>
             <?php
               } 
             ?>
-
             <div class="common-padding">
             <?php 
               the_content();

@@ -292,7 +292,7 @@ a img.aligncenter {
   margin-left: auto;
   margin-right: auto; }
 
-.alignnone {
+.wp-caption {
   max-width: 100%; }
 
 /* =================================================
@@ -321,6 +321,12 @@ a img.aligncenter {
 
 .container {
   width: 900px; }
+  @media (max-width: 980px) {
+    .container {
+      margin: 0 40px; } }
+  @media (max-width: 600px) {
+    .container {
+      margin: 0 20px; } }
 
 header {
   height: 140px;
@@ -337,10 +343,14 @@ footer {
 #unicorn-menu {
   flex: 1;
   margin-left: 80px; }
+  @media (max-width: 900px) {
+    #unicorn-menu {
+      margin-left: 0; } }
   #unicorn-menu ul.menu {
     font-size: 12px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 0; }
     #unicorn-menu ul.menu li {
       list-style: none; }
       #unicorn-menu ul.menu li a {
